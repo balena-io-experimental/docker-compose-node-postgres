@@ -16,5 +16,7 @@ services:
 
   client:
     build: client
+    volumes:
+      - ./../artefacts:/home/app/.versionbot/artefacts
     depends_on:
       - app
